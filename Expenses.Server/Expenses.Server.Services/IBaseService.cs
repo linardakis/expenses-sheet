@@ -1,12 +1,12 @@
 ﻿using System.Linq.Expressions;
 
-namespace Expenses.Server.Repositories
+namespace Expenses.Server.Services
 {
-    public interface IBaseRepository<T>
+    public interface IBaseService<T> where T : class
     {
-        T GetById(int id);
         IEnumerable<T> Get();
         IEnumerable<T> Get(Expression<Func<T,bool>> predicate);
+        T GetById(int id);
         T Create(T entity);
         T Update(T entity);
         void Delete(int id);
