@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.Server.API", "Expenses.Server.API\Expenses.Server.API.csproj", "{58566062-16B1-43DB-AE86-69ABEE7E240A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expenses.Server.API", "Expenses.Server.API\Expenses.Server.API.csproj", "{58566062-16B1-43DB-AE86-69ABEE7E240A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.Server.Services", "Expenses.Server.Services\Expenses.Server.Services.csproj", "{1B963F7B-9B3F-44AB-854C-25FBEE148311}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expenses.Server.Services", "Expenses.Server.Services\Expenses.Server.Services.csproj", "{1B963F7B-9B3F-44AB-854C-25FBEE148311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.Server.Repositories", "Expenses.Server.Repositories\Expenses.Server.Repositories.csproj", "{9D6AB61B-6676-438E-B47D-3FFC9E7C20DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expenses.Server.Repositories", "Expenses.Server.Repositories\Expenses.Server.Repositories.csproj", "{9D6AB61B-6676-438E-B47D-3FFC9E7C20DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.Server.Entities", "Expenses.Server.Entities\Expenses.Server.Entities.csproj", "{850AAB6A-F711-4BC5-AE02-EA5449B8B645}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expenses.Server.Entities", "Expenses.Server.Entities\Expenses.Server.Entities.csproj", "{850AAB6A-F711-4BC5-AE02-EA5449B8B645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.Server.DTO", "Expenses.Server.DTO\Expenses.Server.DTO.csproj", "{CE482A70-1E59-4A32-B24B-85F5C1166ED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.Server.Tests", "Expenses.Server.Tests\Expenses.Server.Tests.csproj", "{52FCD59B-A6E2-449E-AFF1-10B1159DA1F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{850AAB6A-F711-4BC5-AE02-EA5449B8B645}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{850AAB6A-F711-4BC5-AE02-EA5449B8B645}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{850AAB6A-F711-4BC5-AE02-EA5449B8B645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE482A70-1E59-4A32-B24B-85F5C1166ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE482A70-1E59-4A32-B24B-85F5C1166ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE482A70-1E59-4A32-B24B-85F5C1166ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE482A70-1E59-4A32-B24B-85F5C1166ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FCD59B-A6E2-449E-AFF1-10B1159DA1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FCD59B-A6E2-449E-AFF1-10B1159DA1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FCD59B-A6E2-449E-AFF1-10B1159DA1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FCD59B-A6E2-449E-AFF1-10B1159DA1F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

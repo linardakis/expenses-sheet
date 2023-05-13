@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Expenses.Server.Repositories
 {
-    public abstract class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
         private readonly ExpensesDBContext _db;
         public BaseRepository(ExpensesDBContext db)

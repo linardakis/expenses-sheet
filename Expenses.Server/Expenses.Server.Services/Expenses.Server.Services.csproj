@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Expenses.Server.DTO\Expenses.Server.DTO.csproj" />
     <ProjectReference Include="..\Expenses.Server.Repositories\Expenses.Server.Repositories.csproj" />
   </ItemGroup>
 

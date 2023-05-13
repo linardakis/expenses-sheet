@@ -1,4 +1,6 @@
+using Expenses.Server.Entities;
 using Expenses.Server.Repositories.DB;
+using Expenses.Server.Services;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -17,6 +19,12 @@ builder.Services.AddControllers();
 
 builder.Services.AddDbContext<ExpensesDBContext>(
     options => options.UseSqlite("Data source=expenses.db"));
+
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IBaseService<Expense>, BaseService<Expense>>();
+builder.Services.AddScoped<IBaseService<Income>, BaseService<Income>>();
+builder.Services.AddScoped<IBaseService<IncomeCategory>, BaseService<IncomeCategory>>();
+builder.Services.AddScoped<IBaseService<ExpenseCategory>, BaseService<ExpenseCategory>>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
